@@ -1,0 +1,39 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Object",
+"class": "MyObject",
+"language": "GDScript",
+"path": "res://MyObject.gd"
+}, {
+"base": "Resource",
+"class": "MyResource",
+"language": "GDScript",
+"path": "res://addons/resources/MyResource.gd"
+} ]
+_global_script_class_icons={
+"MyObject": "",
+"MyResource": ""
+}
+
+[application]
+
+config/name="New Game Project"
+run/main_scene="res://Test.tscn"
+config/icon="res://icon.png"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "resources" )
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
